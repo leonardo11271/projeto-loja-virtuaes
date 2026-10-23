@@ -1,22 +1,22 @@
 programa {
   funcao inicio() {
     	}
-inteiro tecla_pausa
-inteiro qtd_carrinho_prod1
-inteiro qtd_carrinho_prod2
-inteiro qtd_carrinho_prod3
-escreva ("Pressione ENTER para voltar ao menu...")
-leia (tecla_pausa)
-pare
+i inteiro opcao_menu_principal = -1
+   inteiro opcao_crud = -1
+   inteiro opcao_pagamento = 0
 
-  //==============================================  
-  //U - UPDATE (Atualizar Quantidade no Carrinho)
-  //==============================================
-limpa ()
-escreva ("--- ALTERAR QUANTIDADE NO CARRINHO ---")
 
-escreva ("1. Camisa esportiva (No carrinho: ", qtd_carrinho_prod1, ")")
-escreva ("2. Boné Casual (No carrinho: ", qtd_carrinho_prod2, ")")
-escreva ("3. Tenis De Corrida (No carrinho: ", qtd_carrinho_prod3, ")")
+   // Variavel auxiliar para pausar a tela
+   cadeia tecla_pausa = ""
+
+
+   // preços e estoque fixos dos Produtos
+   real preco_prod1 = 150.0, preco_prod2 = 60.0, preco_prod3 = 250.0
+   inteiro estoque_prod1 = 10, estoque_prod2 = 15, estoque_prod3 = 8
+
+
+   // Variavel do CARRINHO DE COMPRAS (Qtds dos Itens)
+   inteiro qtd_carrinho_prod1 = 0
+   inteiro qtd_carrinho_prod2 = 0
   }
 }
