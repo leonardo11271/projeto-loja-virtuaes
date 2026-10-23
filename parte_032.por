@@ -1,21 +1,17 @@
 programa {
   funcao inicio() {
-     } senao {
-    escreva("quantidade inválida ou estoque insuficiente!
-    ")
-  }
-  senao se (opcao_crud == 3)
-  {
-    se (quantidade_temp > 0 e quantidade_temp <= estoque_prod3) {
-        qtd_carrinho_prod3 = qtd_carrinho_prod3 + quantidade_temp
-        estoque_prod3 = estoque_prod3 - quantidade_temp
-        escreva("
-        Item adicionado ao carrinho com sucesso!
-        ")
-    } senao {
-      escreva("
-      Quantidade inválidaou estoque insuficiente!
-      ")
-}
+        // Variaveis de controle de navegação
+   // 1. LAÇO PRINCIPAL DO SISTEMA
+enquanto (opcao_menu_principal != 0)
+{
+
+// Limpa a tela a cada interação para manter o menu organizado
+limpa ()
+
+escreva (" === BEM-VINDO A NOSSA LOJA VIRTUAL ===")
+
+escreva ("---------------------------------------")
+
+escreva ("=== MENU PRINCIPAL ===")
   }
 }
