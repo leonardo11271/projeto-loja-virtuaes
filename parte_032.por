@@ -1,17 +1,26 @@
 programa {
   funcao inicio() {
-        // Variaveis de controle de navegação
-   // 1. LAÇO PRINCIPAL DO SISTEMA
-enquanto (opcao_menu_principal != 0)
-{
+  }
+		escreva("Escolha o item para alterar a quantidade: ")
+     leia(opcao_crud == 1)
 
-// Limpa a tela a cada interação para manter o menu organizado
-limpa ()
 
-escreva (" === BEM-VINDO A NOSSA LOJA VIRTUAL ===")
+     se (opcao_crud == 1)
+     {
+         estoque_prod1 = estoque_prod1 + qtd_carrinho_prod1
+         escreva("Digite a NOVA quantidade total para este item: ")
+         leia(quantidade_temp)
 
-escreva ("---------------------------------------")
 
-escreva ("=== MENU PRINCIPAL ===")
+         se (quantidade_temp >= 0 e quantidade_temp <= estoque_prod1) {
+             qtd_carrinho_prod1 = quantidade_temp
+             estoque_prod1 = quantidade_temp
+             estoque_prod1 = estoque_prod1 - quantidade_temp
+Quantidade atualizada com sucesso!
+")
+         } senao {
+             estoque_prod1 = estoque_prod1 - qtd_carrinho_prod1
+             escreva("
+
   }
 }
