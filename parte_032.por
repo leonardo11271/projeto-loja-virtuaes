@@ -1,22 +1,22 @@
 programa {
   funcao inicio() {
-     Quantidade invalida ou acima do estoque disponivel!")
+         // Variaveis de controle de navegação
+   inteiro opcao_menu_principal = -1
+   inteiro opcao_crud = -1
+   inteiro opcao_pagamento = 0
 
-        }
-  }
-  senao se (opcao_crud == 2)
-  { 
-    estoque_prod2 = estoque_prod2 + qtd_carrinho_prod2
-    escreva("Digite a NOVA quantidade total para este item: ")
-    leia (quantidade_temp)
 
-    se (quantidade_temp >= 0 e quantidade_temp <= estoque_prod2) { 
-    qtd_carrinho_prod2 = quantidade_temp
-    estoque_prod2 = estoque_prod2 - quantidade_temp
-    escreva("Quantidade atualizada com sucesso!")
- }  seano  {
-    estoque_prod2 = estoque_prod2 - qtd_carrinho_prod2 
-    escreva("
+   // Variavel auxiliar para pausar a tela
+   cadeia tecla_pausa = ""
 
+
+   // preços e estoque fixos dos Produtos
+   real preco_prod1 = 150.0, preco_prod2 = 60.0, preco_prod3 = 250.0
+   inteiro estoque_prod1 = 10, estoque_prod2 = 15, estoque_prod3 = 8
+
+
+   // Variavel do CARRINHO DE COMPRAS (Qtds dos Itens)
+   inteiro qtd_carrinho_prod1 = 0
+   inteiro qtd_carrinho_prod2 = 0
   }
 }
